@@ -63,7 +63,9 @@ public class Tracker extends AppCompatActivity {
         ref = db.getReference(userID);
         series.setColor(Color.YELLOW);
         series.setDrawDataPoints(true);
-        series.setThickness(8);
+        series.setThickness(10);
+        series.setDrawBackground(true);
+        series.setBackgroundColor(Color.argb(60, 255, 255, 0));
         graphView.getViewport().setXAxisBoundsManual(true);
         graphView.getViewport().setMinX(3);
         graphView.getViewport().setMaxX(1000);
